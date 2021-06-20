@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311769515537",
+    "project_id": "messengerdev-8cd54",
+    "storage_bucket": "messengerdev-8cd54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311769515537:android:0b6adbf31a514b8e8ed3b0",
+        "android_client_info": {
+          "package_name": "com.everton.messengerdev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311769515537-47k9neii7n5v3d6qvcvuhfmr9v6v96ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2H1csNUWhGsC5vORW3ETPrgTE265OvrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311769515537-47k9neii7n5v3d6qvcvuhfmr9v6v96ia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

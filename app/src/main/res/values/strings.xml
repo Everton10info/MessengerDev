@@ -4,4 +4,6 @@
     <string name="password">Senha</string>
     <string name="enter">Entre</string>
     <string name="accont">Não tem uma conta? Crie aqui!.</string>
+    <string name="cadastrar">cadastrar</string>
+    <string name="name">Nome</string>
 </resources>

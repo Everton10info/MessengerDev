@@ -8,22 +8,34 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/edit_email"
+        android:id="@+id/edit_cadName"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/edit_cadEmail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:paddingLeft="8dp"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/edit_cadName"
+        app:layout_constraintStart_toStartOf="@+id/edit_cadName"
+        app:layout_constraintTop_toBottomOf="@+id/edit_cadName"
+        tools:ignore="TextFields" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editCadTextPassword"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
@@ -31,32 +43,22 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingStart="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/edit_email"
-        app:layout_constraintStart_toStartOf="@+id/edit_email"
-        app:layout_constraintTop_toBottomOf="@+id/edit_email"
- />
+        app:layout_constraintEnd_toEndOf="@+id/edit_cadEmail"
+        app:layout_constraintStart_toStartOf="@+id/edit_cadEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edit_cadEmail"
+        />
 
     <Button
-        android:id="@+id/btn_enter"
+        android:id="@+id/btn_reg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/bg_button_rounded"
-        android:text="@string/enter"
+        android:text="@string/cadastrar"
         app:backgroundTint="@android:color/holo_blue_dark"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/editCadTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editCadTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editCadTextPassword" />
 
-    <TextView
-        android:id="@+id/txt_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/accont"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/btn_enter"
-        app:layout_constraintStart_toStartOf="@+id/btn_enter"
-        app:layout_constraintTop_toBottomOf="@+id/btn_enter" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
