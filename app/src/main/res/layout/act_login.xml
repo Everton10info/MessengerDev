@@ -7,20 +7,35 @@
     android:background="@android:color/white"
     tools:context=".LoginActivity">
 
+    <Button
+        android:id="@+id/image_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_image"
+        android:text="Imagem"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/edit_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/edit_email"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:paddingLeft="8dp"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textPersonName"
+        android:paddingLeft="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/image_button"
+        app:layout_constraintBottom_toBottomOf="@id/editTextTextPassword"/>
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -59,4 +74,6 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_enter"
         app:layout_constraintStart_toStartOf="@+id/btn_enter"
         app:layout_constraintTop_toBottomOf="@+id/btn_enter" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

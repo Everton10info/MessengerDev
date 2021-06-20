@@ -25,7 +25,7 @@ class RegActivity : AppCompatActivity() {
 
         if (email.isEmpty() || password.isEmpty()) {
             Toast.makeText(
-                this, "email e senhas devem ser informados",
+                this, "email e senha devem ser informados",
                 Toast.LENGTH_LONG
             ).show()
             return
@@ -40,5 +40,7 @@ class RegActivity : AppCompatActivity() {
 
 
             }
+
     }
+
 }
