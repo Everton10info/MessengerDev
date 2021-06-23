@@ -1,5 +1,6 @@
 # MessengerDev
 
-**Chat para devs**
+**Chat para devs, integração com Firebase**
+
 
 
