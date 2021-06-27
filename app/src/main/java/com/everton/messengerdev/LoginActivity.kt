@@ -37,6 +37,11 @@ class LoginActivity : AppCompatActivity() {
                 if (it.isSuccessful) {
                     Log.i("teste", "login feito ${it.result?.user?.uid}")
                 }
+                val intent = Intent(this@LoginActivity, MessagesActivity :: class .java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or
+                        Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
+
             }.addOnFailureListener {
                 Log.e("teste", it.message, it)
 

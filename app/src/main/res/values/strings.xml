@@ -8,5 +8,7 @@
     <string name="name">Nome</string>
     <string name="imagem">imagem</string>
     <string name="imagem_do_perfil">imagen do perfil</string>
+    <string name="contacts">contacts</string>
+    <string name="logout">logout</string>
 
 </resources>
